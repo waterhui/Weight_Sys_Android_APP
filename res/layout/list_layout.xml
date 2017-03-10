@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#EBEBEB"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" >  
+  
+    <ScrollView
+        android:background="#EBEBEB"
+        android:layout_width="wrap_content"  
+    	android:layout_height="wrap_content" >
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:id="@+id/table_layout_1"
+        android:background="#EBEBEB" >
+
+        <TableRow
+            android:background="#EBEBEB"
+            android:layout_margin="0.5dip" >
+			<TextView 
+			    android:text="次数"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textStyle="bold" 
+			    />
+            <TextView
+                android:text="体重"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+            <TextView                 
+                android:text="BMI值"
+                android:textSize="20sp"
+				android:layout_gravity="center"
+                android:textStyle="bold" />
+            <TextView                 
+                android:text="体态"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+            <TextView                 
+                android:text="测量日期"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:textStyle="bold" />
+
+        </TableRow>
+    </TableLayout>
+    </ScrollView>
+  
+</RelativeLayout>  

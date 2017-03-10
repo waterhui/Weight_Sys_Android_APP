@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"  
+
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent" >  
+  	
+    <LinearLayout 
+        android:layout_width="wrap_content"  
+        android:layout_height="wrap_content"  
+        android:background="#FFFFFF"
+       	android:layout_gravity="center_vertical"
+        android:id="@+id/chart_linear_layout"
+        android:orientation="vertical" >
+		
+       <TextView 
+			android:layout_width="match_parent"  
+        	android:layout_height="wrap_content" 
+        	android:textAlignment="center"
+        	android:layout_marginLeft="5dp"
+        	android:textColor="#32CCC2"
+        	android:text="@string/chart_y"
+        	android:background="#FFFFFF"/>
+        
+       <com.example.fragmentcom.MyLineChartView
+	    android:id="@+id/line_chart"
+	    android:textAlignment="center"
+	    android:layout_width="match_parent"
+	    android:layout_marginTop="5dp"
+	    android:layout_height="400dp"/>
+       
+    </LinearLayout>
+   
+</ScrollView>  

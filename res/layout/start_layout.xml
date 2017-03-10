@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F6F5"
+    android:orientation="vertical" >
+    
+    <Button 
+		android:id="@+id/btn_login"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:textColor="#FFFFFF"
+		android:background="@drawable/btn_selector"
+		android:layout_centerInParent="true"
+		android:layout_marginTop="60dp"
+		android:onClick="Login"
+		android:text="登录"/>
+    
+   
+   	<LinearLayout 
+   	    android:layout_width="match_parent"  
+        android:layout_height="50dp"  
+        android:background="#FFFFFF"
+        android:id="@+id/user_layout"
+        android:layout_above="@id/btn_login"
+        android:orientation="horizontal"
+   	    >
+		<TextView 
+	    	android:id="@+id/tv_user"
+	    	android:layout_height="match_parent"
+	    	android:layout_width="0dp"
+	    	android:layout_weight="1"
+	    	android:gravity="center_vertical"
+	    	android:textSize="20sp"
+	    	android:layout_marginLeft="5dp"
+	    	android:text="@string/user_name"/>
+		<EditText 
+	    	android:id="@+id/edt_user"
+	    	android:hint="请输入用户名"
+			android:layout_height="50dp"
+			android:textSize="20sp"
+		    android:layout_width="0dp"
+		    android:layout_weight="4"
+		    android:background="#FFFFFF"
+		    android:singleLine="true"
+	   		android:gravity="center_vertical"
+	   		android:maxLength="20"
+	    />   
+	    <TextView 
+		    android:id="@+id/tv_del_user"
+		    android:layout_height="18dp"
+		    android:layout_width="18dp"
+		    android:layout_marginRight="10dp"
+		    android:layout_gravity="center_vertical"
+		    android:clickable="true"
+		    android:onClick="edt_del_user"
+		    android:background="@drawable/delete"/>
+   	</LinearLayout>
+   	
+   	<View
+   	    android:id="@+id/seprator_view"
+		android:layout_width="match_parent"
+		android:layout_height="0.3dp"
+		android:background="#D6D6D6"
+		android:layout_below="@id/user_layout"
+		 />
+   	
+   	<LinearLayout 
+   	    android:layout_width="match_parent"  
+        android:layout_height="50dp"  
+        android:background="#FFFFFF"
+	    android:layout_centerInParent="true"
+        android:id="@+id/pwd_layout"
+        android:orientation="horizontal"
+        android:layout_below="@id/seprator_view"
+   	    >
+	
+   	    <TextView 
+		    android:id="@+id/tv_pwd"
+		    android:layout_height="match_parent"
+			android:gravity="center_vertical"
+		    android:layout_width="0dp"
+		    android:layout_weight="1"
+		    android:textSize="20sp"
+		    android:layout_marginLeft="5dp"
+	    	android:text="密    码: "/>
+		<EditText 
+		    android:id="@+id/edt_pwd"
+		    android:hint="请输入密码"
+			android:layout_height="50dp"
+			android:textSize="20sp"
+		    android:layout_width="0dp"
+		    android:layout_weight="4"
+		    android:background="#FFFFFF"
+		    android:singleLine="true"
+			android:gravity="center_vertical"
+			android:inputType="textPassword"
+			android:maxLength="40"
+	    />   
+	
+		<TextView 
+		    android:id="@+id/tv_del_pwd"
+		    android:layout_height="18dp"
+		    android:layout_width="18dp"
+		    android:layout_gravity="center"
+		    android:layout_marginRight="10dp"
+		    android:clickable="true"
+		    android:onClick="edt_del_pwd"
+		    android:background="@drawable/delete"/>
+   	</LinearLayout>
+   	
+	  <ImageView 
+		android:src="@drawable/mesure"
+		android:id="@+id/iv_back"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:contentDescription="background"
+		android:adjustViewBounds="true"
+		android:layout_above="@id/user_layout"
+		android:background="#F3F6F5"
+       />
+
+</RelativeLayout>
